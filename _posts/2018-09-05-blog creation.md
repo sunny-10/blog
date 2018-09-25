@@ -1,14 +1,13 @@
 ---
-title: minimal-mistakes 테마를 이용한 블로그 생성
+title: minimal-mistakes 테마를 이용한 GitHub 블로그 생성
 categories:
   - Blogs
 tags:
   - Blog
-  - Jekyll
   - minimal-mistakes
 ---
 
-# !서론
+!# 서론
 Github Pages상에 Jekyll 기반의 블로그 사이트 구축
 
 # 준비작업
