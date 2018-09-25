@@ -16,9 +16,9 @@ Github Pages상에 Jekyll 기반의 블로그 사이트 구축
 
 ## 테마 가져오기
 
-> 아래 내용은 [minimal-misatakes의 퀵가이드](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) 를 참조하여 해도 된다.
+> 아래 내용은 [minimal-misatakes의 퀵가이드](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) 를 참조 및 요약한 글.
 
-[minimal-mistakes](https://github.com/mmistakes/minimal-mistakes) 에서 소스를 가져온다. Fork를 해도 되지만 그냥 소스를 다운받아서 옮기면 된다. 옮기기 전에 쓸데없는 것들은 삭제하자. 삭제해야 할 리스트는 아래와 같다.
+[minimal-mistakes](https://github.com/mmistakes/minimal-mistakes) 에서 Fork 또는 downlaod 및 업로드를 통하여 소스를 카피. 소스 카피 시 옮기기 전에 쓸데없는 것은 삭제. 삭제해야 할 리스트는 아래와 같다.
 - `.editorconfig`
 - `.gitattributes`
 - `.github`
