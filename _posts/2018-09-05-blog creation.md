@@ -20,7 +20,7 @@ tags:
 
 
 
->### 테마 가져오기
+>### 테마 적용
 
 - 아래 내용은 [minimal-misatakes의 퀵가이드](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) 를 참조 및 요약한 글.
 - [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes) 에서 Fork 또는 downlaod 및 업로드를 통하여 소스를 카피. 
@@ -38,7 +38,7 @@ tags:
 
 
 
->### 포스트 쓰기
+>### 포스트 작성
 - _posts라는 폴더 생성 후, 해당 폴더내에 작성
 - 포스트는 특정 제목으로 작성(YYYY-MM-DD-{TITLE}.md)로 작성
 - 내용은 크게 두 부분으로 구분 
