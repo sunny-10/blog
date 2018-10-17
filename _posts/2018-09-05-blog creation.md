@@ -7,18 +7,18 @@ tags:
   - minimal-mistakes
 ---
 
->### 서론
+>## 서론
 
 - Github Pages상에 Jekyll 기반의 블로그 사이트 구축
 
 
->### 준비작업
+>## 준비작업
 
 - Github 상에서 블로그 호스팅을 위해서는 특별한 이름의 repository가 필요
 - {GITHUB_ID}.github.io 형태로 repository 생성
 
 
->### 테마 적용
+>## 테마 적용
 
 - 아래 내용은 [minimal-misatakes의 퀵가이드](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) 를 참조 및 요약한 글.
 - [minimal-mistakes](https://github.com/mmistakes/minimal-mistakes) 에서 Fork 또는 downlaod 및 업로드를 통하여 소스를 카피. 
@@ -35,7 +35,7 @@ tags:
  - screenshot.png
 
 
->### 포스트 작성
+>## 포스트 작성
 
 - _posts라는 폴더 생성 후, 해당 폴더내에 작성
 - 포스트는 특정 제목으로 작성(YYYY-MM-DD-{TITLE}.md)로 작성
@@ -55,7 +55,7 @@ tags:
 ```
 
 
->### 카테고리 및 태그 적용
+>## 카테고리 및 태그 적용
 
 - minimal-mistakes 테마는 카테고리와 태그를 지원은 하지만 기본 설정되어 있지는 않다. 
 - minimal-mistakes의 [깃헙 페이지의 docs 폴더](https://github.com/mmistakes/minimal-mistakes/tree/master/docs) 를 참고하면 다양한 예제들을 가져올 수 있다. 
