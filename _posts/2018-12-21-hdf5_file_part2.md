@@ -7,15 +7,14 @@ tags:
   - minimal-mistakes
 ---
 <br>
-<br>
 
 >## 00. HDF5를 이용한 데이터 학습
 - HDF5 포맷은 대용량 데이터를 처리하기 위한 파일 형식
 - 많은 양의 데이터를 안정적으로 저장가능
 - Random Access 및 빠른 검색 등을 지원
 - Python에서 HDF5를 다루기 위해서는 h5py 라는 모듈 설치가 필요
-\
-\
+<br>
+
 >## 01. h5py를 이용해 데이터셋 만드는 방법 
 
     import numpy as np
@@ -26,13 +25,15 @@ tags:
         f.create_dataset('label', (1000,), dtype='float32')              # 1000개의 float을 담는 데이터 공간을 생성
         image_set = f['image']    # 실 데이터 공간에 접근할 변수를 할당한다. 
         label_set = f['label']
-\   
+<br>
+
 위 샘플은 filename 경로에 .hdf5 파일을 생성하고, 그 파일에 자료를 저장할 데이터셋을 생성하는 코드이다.    
 filename 은  "path/data/hdf5file/name.hdf5"  과 같은 형식으로 저장된다     
 데이터셋은 key와 value 형태로 HDF5 파일 내부에 세부 경로를 만들고 그 경로에 주어진 데이터가 들어가는 형식    
 즉, 경로를 key로, 데이터를 value로 가지는 대용량의 딕셔너리로 간주하여도 됨다.     
-\
-\
+<br>
+<br>
+
 >## 02. 데이터셋 생성한 뒤, 인덱스에 값을 대입하는 방법 
 
     labels = label_set[:]    # 이미지 데이터 전체를 반환하지만, 메모리에 올리지는 않는다. 값에 접근할 때 메모리에 올린다. 
@@ -43,7 +44,8 @@ filename 은  "path/data/hdf5file/name.hdf5"  과 같은 형식으로 저장된�
 
 위와 같이 HDF5 파일의 자료는 원하는 양 만큼 잘라낸 후 numpy array 와 유사하게 사용할 수 있다.     
 이 때, HDF5 파일은 실제 데이터 값에 접근하기 전까지는 메모리로 올라오지 않고, 데이터에 접근할 때도 메모리 제한 내에서 load와 close 를 반복하기 때문에 데이터 양과 무관하게 마음껏 사용할 수 있게 된다.     
-
+<br>
+<br>
     
 >## 03.keras 에서 HDF5 파일을 학습 데이터로 사용하는 법  
 
@@ -64,9 +66,12 @@ keras.utils.io_utils.HDF5Matrix  를 이용하면 Keras에서 HDF5 포맷을 학
     
     # model이 이미 .compile() 이 된 모델이라고 가정하면 
     model.fit (x_train, y_train, epochs=n_epoch, batch_size=batch_size, validation_data=(x_test, y_test)) 
-    
+<br>
+
  위와 같이 numpy array 를 쓰듯이 사용하면 된다.    
  HDF5포맷을 파일로 저장하고, keras의 HDF5Matrix를 이용하면 복잡한 처리 없이 대용량 데이터를 쉽게 학습할 수 있다.    
+<br>
+<br>
 
  참고로 위의 내용들은 아래의 레퍼런스들을 참고로 만든 내용입니다.    
  reference 1 = http://nuxlear.tistory.com/4?category=280392    
