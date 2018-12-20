@@ -7,13 +7,13 @@ tags:
   - minimal-mistakes
 ---
 \
-\    
 >## 00. HDF5를 이용한 데이터 학습
 - HDF5 포맷은 대용량 데이터를 처리하기 위한 파일 형식
 - 많은 양의 데이터를 안정적으로 저장가능
 - Random Access 및 빠른 검색 등을 지원
 - Python에서 HDF5를 다루기 위해서는 h5py 라는 모듈 설치가 필요
-\   
+\
+\
 >## 01. h5py를 이용해 데이터셋 만드는 방법 
 
     import numpy as np
